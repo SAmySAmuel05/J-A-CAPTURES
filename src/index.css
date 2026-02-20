@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 14% 4%;
+    --foreground: 210 20% 98%;
+    --card: 220 14% 6%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 14% 6%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 42 60% 57%;
+    --primary-foreground: 220 14% 4%;
+    --secondary: 220 10% 12%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 220 10% 18%;
+    --muted-foreground: 215 16% 70%;
+    --accent: 42 60% 57%;
+    --accent-foreground: 220 14% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 18%;
+    --input: 220 10% 18%;
+    --ring: 42 60% 57%;
+    --radius: 0.625rem;
+    
+    --gold: #D4A24F;
+    --charcoal: #0B0D10;
+    --slate: #1a1d24;
+    --sage: #6E7D6F;
+    --text-primary: #F5F7FA;
+    --text-secondary: #B8C0CC;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-[#0B0D10] text-[#F5F7FA] antialiased;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .text-gold {
+    color: var(--gold);
+  }
+  
+  .bg-charcoal {
+    background-color: var(--charcoal);
+  }
+  
+  .bg-slate {
+    background-color: var(--slate);
+  }
+  
+  .text-primary-custom {
+    color: var(--text-primary);
+  }
+  
+  .text-secondary-custom {
+    color: var(--text-secondary);
+  }
+  
+  .shutter-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--charcoal);
+    z-index: 100;
+    transform: translateY(0);
+  }
+  
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+  
+  .hero-gradient {
+    background: linear-gradient(180deg, rgba(11,13,16,0.4) 0%, rgba(11,13,16,0) 50%, rgba(11,13,16,0.6) 100%);
+  }
+  
+  .image-hover-zoom {
+    overflow: hidden;
+  }
+  
+  .image-hover-zoom img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .image-hover-zoom:hover img {
+    transform: scale(1.08);
+  }
+  
+  .caption-overlay {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .image-hover-zoom:hover .caption-overlay {
+    opacity: 1;
+  }
+  
+  .btn-gold {
+    @apply px-8 py-3 bg-[#D4A24F] text-[#0B0D10] font-medium rounded-full transition-all duration-300;
+  }
+  
+  .btn-gold:hover {
+    @apply scale-105 shadow-lg;
+    box-shadow: 0 10px 40px rgba(212, 162, 79, 0.3);
+  }
+  
+  .btn-outline {
+    @apply px-8 py-3 border border-[#D4A24F] text-[#D4A24F] font-medium rounded-full transition-all duration-300;
+  }
+  
+  .btn-outline:hover {
+    @apply bg-[#D4A24F] text-[#0B0D10];
+  }
+  
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-28;
+  }
+  
+  .micro-label {
+    @apply font-mono text-xs uppercase tracking-[0.14em] text-[#B8C0CC];
+  }
+}
+
+@layer utilities {
+  .clip-inset-0 {
+    clip-path: inset(0);
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0D10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2d34;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3d44;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(212, 162, 79, 0.3);
+  color: #F5F7FA;
+}
