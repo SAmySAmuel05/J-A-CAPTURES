@@ -165,7 +165,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
         style={{ opacity: 0 }}
       >
         <p className="font-mono text-xs text-text-secondary tracking-[0.08em] max-w-[280px]">
-          Con sede en México — disponibles en todo el país y el mundo.
+          Trabajamos solo en ciertas zonas de México.
         </p>
       </div>
 

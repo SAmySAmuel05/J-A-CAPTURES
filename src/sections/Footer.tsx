@@ -31,7 +31,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="mt-4 text-text-secondary text-sm leading-relaxed">
-              Estudio de fotografía de bodas y editorial con sede en México. Disponibles en todo el país y el mundo.
+              Estudio de fotografía de bodas y editorial con sede en México. Trabajamos en ciertas zonas del país.
             </p>
             
             {/* Social Links */}
@@ -92,7 +92,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <span className="text-text-secondary">
-                    Disponibles en todo el mundo
+                    Ciertas zonas de México
                   </span>
                 </li>
               </ul>

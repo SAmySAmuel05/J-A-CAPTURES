@@ -131,10 +131,10 @@ export default function StudioIntro() {
             style={{ opacity: 0 }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight">
-              Fotografiamos los momentos entre momentos.
+              Fotografía que cuenta tu historia.
             </h2>
             <p className="mt-6 text-text-secondary text-base md:text-lg leading-relaxed">
-              Instantes candidos, luz natural y los detalles que querrás conservar, en una historia que se siente.
+              Bodas, sesiones de pareja y eventos: capturamos los instantes reales, la luz natural y los detalles que querrás conservar para siempre.
             </p>
             <a 
               href="#selected-work"
