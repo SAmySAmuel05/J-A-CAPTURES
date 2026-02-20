@@ -7,24 +7,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   {
-    question: 'How far in advance should we book?',
-    answer: 'We recommend booking 8-12 months in advance for weddings, especially during peak season (May-October). For engagement sessions and smaller events, 4-6 weeks is typically sufficient.',
+    question: '¿Con cuánta anticipación debemos reservar?',
+    answer: 'Recomendamos reservar con 8-12 meses de anticipación para bodas, sobre todo en temporada alta (mayo-octubre). Para sesiones de pareja y eventos pequeños, 4-6 semanas suele ser suficiente.',
   },
   {
-    question: 'Do you travel for destination weddings?',
-    answer: 'Absolutely! We love destination weddings. Travel fees are calculated based on location and include airfare, accommodation, and transportation. Contact us for a custom quote.',
+    question: '¿Hacen bodas en otros destinos?',
+    answer: '¡Sí! Nos encantan las bodas destino. Los costos de traslado se calculan según el lugar e incluyen vuelos, hospedaje y transporte. Contáctanos para una cotización personalizada.',
   },
   {
-    question: "What's included in the gallery?",
-    answer: 'All packages include a private online gallery with high-resolution, edited images. You\'ll receive print-ready files with full printing rights, and the gallery stays active for one year.',
+    question: '¿Qué incluye la galería?',
+    answer: 'Todos los paquetes incluyen una galería en línea privada con imágenes en alta resolución y editadas. Recibirás archivos listos para imprimir con derechos de impresión, y la galería permanece activa un año.',
   },
   {
-    question: 'Can we add a second photographer?',
-    answer: 'Yes! A second photographer is included in our full wedding coverage package. They capture alternate angles, candid moments, and help ensure no moment is missed.',
+    question: '¿Podemos sumar un segundo fotógrafo?',
+    answer: '¡Sí! Un segundo fotógrafo está incluido en nuestro paquete de cobertura completa de boda. Captura otros ángulos, momentos espontáneos y ayuda a que no se pierda ningún instante.',
   },
   {
-    question: 'How long until we receive our photos?',
-    answer: 'Engagement sessions are delivered within 2-3 weeks. Wedding galleries are typically ready within 6-8 weeks during peak season, and 4-6 weeks during off-peak. Rush delivery is available as an add-on.',
+    question: '¿En cuánto tiempo recibimos las fotos?',
+    answer: 'Las sesiones de pareja se entregan en 2-3 semanas. Las galerías de boda suelen estar listas en 6-8 semanas en temporada alta y 4-6 en temporada baja. La entrega express está disponible como extra.',
   },
 ];
 
@@ -99,9 +99,9 @@ export default function FAQ() {
             className="text-center mb-16"
             style={{ opacity: 0 }}
           >
-            <span className="micro-label">FAQ</span>
+            <span className="micro-label">Preguntas frecuentes</span>
             <h2 className="font-display text-5xl md:text-6xl text-text-primary mt-4">
-              FAQ
+              Preguntas frecuentes
             </h2>
           </div>
 
@@ -151,7 +151,7 @@ export default function FAQ() {
               href="#contact"
               className="inline-flex items-center gap-2 text-gold font-mono text-sm uppercase tracking-[0.12em] hover:gap-4 transition-all duration-300"
             >
-              Still have questions? Ask us directly
+              ¿Más preguntas? Escríbenos
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>

@@ -6,11 +6,11 @@ import { X } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const navLinks = [
-  { label: 'Work', href: '#selected-work' },
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Trabajo', href: '#selected-work' },
+  { label: 'Servicios', href: '#services' },
+  { label: 'Proceso', href: '#process' },
+  { label: 'Preguntas', href: '#faq' },
+  { label: 'Contacto', href: '#contact' },
 ];
 
 export default function Navigation() {
@@ -96,7 +96,7 @@ export default function Navigation() {
                 onClick={(e) => handleLinkClick(e, '#contact')}
                 className="btn-gold text-sm py-2 px-6"
               >
-                Book
+                Reservar
               </a>
             </div>
 
@@ -105,7 +105,7 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(true)}
               className="md:hidden flex items-center gap-2 text-text-primary"
             >
-              <span className="font-mono text-xs uppercase tracking-[0.12em]">Menu</span>
+              <span className="font-mono text-xs uppercase tracking-[0.12em]">Menú</span>
               <div className="w-2 h-2 rounded-full bg-gold" />
             </button>
           </div>
@@ -124,7 +124,7 @@ export default function Navigation() {
         onClick={() => setIsMenuOpen(true)}
         className={`fixed top-6 right-6 md:right-12 z-40 flex items-center gap-2 text-text-primary transition-opacity duration-500 ${isVisible ? 'opacity-0' : 'opacity-100'}`}
       >
-        <span className="font-mono text-xs uppercase tracking-[0.12em]">Menu</span>
+        <span className="font-mono text-xs uppercase tracking-[0.12em]">Menú</span>
         <div className="w-2 h-2 rounded-full bg-gold" />
       </button>
 

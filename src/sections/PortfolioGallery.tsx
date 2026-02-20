@@ -16,29 +16,29 @@ interface PortfolioItem {
 }
 
 const portfolioItems: PortfolioItem[] = [
-  { id: 1, src: assetUrl('images/hero_couple.jpg'), title: 'Eternal Love', category: 'weddings' },
-  { id: 2, src: assetUrl('images/mosaic_tile_a.jpg'), title: 'Bridal Portrait', category: 'weddings' },
-  { id: 3, src: assetUrl('images/mosaic_tile_b.jpg'), title: 'Urban Romance', category: 'weddings' },
-  { id: 4, src: assetUrl('images/mosaic_tile_c.jpg'), title: 'Classic Elegance', category: 'weddings' },
-  { id: 5, src: assetUrl('images/mosaic_tile_d.jpg'), title: 'Reception Magic', category: 'weddings' },
-  { id: 6, src: assetUrl('images/mosaic_tile_e.jpg'), title: 'The Details', category: 'weddings' },
-  { id: 7, src: assetUrl('images/portfolio_corporate_01.jpg'), title: 'Gala Evening', category: 'corporate' },
-  { id: 8, src: assetUrl('images/portfolio_corporate_02.jpg'), title: 'Executive Portrait', category: 'corporate' },
-  { id: 9, src: assetUrl('images/portfolio_corporate_03.jpg'), title: 'Conference Keynote', category: 'corporate' },
-  { id: 10, src: assetUrl('images/portfolio_social_01.jpg'), title: 'Celebration', category: 'social' },
-  { id: 11, src: assetUrl('images/portfolio_social_02.jpg'), title: 'Birthday Toast', category: 'social' },
-  { id: 12, src: assetUrl('images/portfolio_portrait_01.jpg'), title: 'Studio Elegance', category: 'portraits' },
-  { id: 13, src: assetUrl('images/portfolio_portrait_02.jpg'), title: 'Character Study', category: 'portraits' },
-  { id: 14, src: assetUrl('images/studio_window_02.jpg'), title: 'Golden Hour', category: 'weddings' },
-  { id: 15, src: assetUrl('images/testimonial_left.jpg'), title: 'Joyful Moments', category: 'weddings' },
+  { id: 1, src: assetUrl('images/hero_couple.jpg'), title: 'Amor eterno', category: 'weddings' },
+  { id: 2, src: assetUrl('images/mosaic_tile_a.jpg'), title: 'Retrato de novia', category: 'weddings' },
+  { id: 3, src: assetUrl('images/mosaic_tile_b.jpg'), title: 'Romance urbano', category: 'weddings' },
+  { id: 4, src: assetUrl('images/mosaic_tile_c.jpg'), title: 'Elegancia clásica', category: 'weddings' },
+  { id: 5, src: assetUrl('images/mosaic_tile_d.jpg'), title: 'Magia del banquete', category: 'weddings' },
+  { id: 6, src: assetUrl('images/mosaic_tile_e.jpg'), title: 'Los detalles', category: 'weddings' },
+  { id: 7, src: assetUrl('images/portfolio_corporate_01.jpg'), title: 'Gala', category: 'corporate' },
+  { id: 8, src: assetUrl('images/portfolio_corporate_02.jpg'), title: 'Retrato ejecutivo', category: 'corporate' },
+  { id: 9, src: assetUrl('images/portfolio_corporate_03.jpg'), title: 'Conferencia', category: 'corporate' },
+  { id: 10, src: assetUrl('images/portfolio_social_01.jpg'), title: 'Celebración', category: 'social' },
+  { id: 11, src: assetUrl('images/portfolio_social_02.jpg'), title: 'Brindis de cumpleaños', category: 'social' },
+  { id: 12, src: assetUrl('images/portfolio_portrait_01.jpg'), title: 'Elegancia en estudio', category: 'portraits' },
+  { id: 13, src: assetUrl('images/portfolio_portrait_02.jpg'), title: 'Estudio de carácter', category: 'portraits' },
+  { id: 14, src: assetUrl('images/studio_window_02.jpg'), title: 'Hora dorada', category: 'weddings' },
+  { id: 15, src: assetUrl('images/testimonial_left.jpg'), title: 'Momentos de alegría', category: 'weddings' },
 ];
 
 const categories: { key: Category; label: string }[] = [
-  { key: 'all', label: 'All Work' },
-  { key: 'weddings', label: 'Weddings' },
-  { key: 'corporate', label: 'Corporate' },
-  { key: 'social', label: 'Social Events' },
-  { key: 'portraits', label: 'Portraits' },
+  { key: 'all', label: 'Todo' },
+  { key: 'weddings', label: 'Bodas' },
+  { key: 'corporate', label: 'Corporativo' },
+  { key: 'social', label: 'Eventos sociales' },
+  { key: 'portraits', label: 'Retratos' },
 ];
 
 export default function PortfolioGallery() {
@@ -161,7 +161,7 @@ export default function PortfolioGallery() {
               ref={(el) => { itemRefs.current[index] = el; }}
               className="portfolio-item relative overflow-hidden rounded-lg break-inside-avoid group cursor-pointer"
               onClick={() => setSelectedImage(item)}
-              data-cursor-text="View"
+              data-cursor-text="Ver"
             >
               <div className={`relative ${
                 index % 3 === 0 ? 'aspect-[4/5]' : 
@@ -177,7 +177,7 @@ export default function PortfolioGallery() {
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
                   <span className="font-mono text-xs text-gold uppercase tracking-[0.12em] mb-1">
-                    {item.category}
+                    {categories.find(c => c.key === item.category)?.label ?? item.category}
                   </span>
                   <h3 className="font-display text-2xl text-text-primary">
                     {item.title}

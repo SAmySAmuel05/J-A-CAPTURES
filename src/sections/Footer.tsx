@@ -8,11 +8,11 @@ const socialLinks = [
 ];
 
 const navLinks = [
-  { label: 'Work', href: '#selected-work' },
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Trabajo', href: '#selected-work' },
+  { label: 'Servicios', href: '#services' },
+  { label: 'Proceso', href: '#process' },
+  { label: 'Preguntas', href: '#faq' },
+  { label: 'Contacto', href: '#contact' },
 ];
 
 export default function Footer() {
@@ -31,7 +31,7 @@ export default function Footer() {
               </span>
             </a>
             <p className="mt-4 text-text-secondary text-sm leading-relaxed">
-              Wedding & editorial photography studio based in the Pacific Northwest, available worldwide.
+              Estudio de fotografía de bodas y editorial con sede en México. Disponibles en todo el país y el mundo.
             </p>
             
             {/* Social Links */}
@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="flex flex-wrap gap-8 md:gap-12">
             <div>
               <h4 className="font-mono text-xs text-text-secondary uppercase tracking-[0.12em] mb-4">
-                Navigation
+                Navegación
               </h4>
               <ul className="space-y-3">
                 {navLinks.map((link) => (
@@ -74,7 +74,7 @@ export default function Footer() {
 
             <div>
               <h4 className="font-mono text-xs text-text-secondary uppercase tracking-[0.12em] mb-4">
-                Contact
+                Contacto
               </h4>
               <ul className="space-y-3">
                 <li>
@@ -87,12 +87,12 @@ export default function Footer() {
                 </li>
                 <li>
                   <span className="text-text-secondary">
-                    Portland, Oregon
+                    Ciudad de México
                   </span>
                 </li>
                 <li>
                   <span className="text-text-secondary">
-                    Available Worldwide
+                    Disponibles en todo el mundo
                   </span>
                 </li>
               </ul>
@@ -103,10 +103,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-text-secondary/60 text-sm">
-            © {new Date().getFullYear()} J&A Captures. All rights reserved.
+            © {new Date().getFullYear()} J&A Captures. Todos los derechos reservados.
           </p>
           <p className="text-text-secondary/60 text-sm">
-            Crafted with care for moments that matter.
+            Hecho con cuidado para los momentos que importan.
           </p>
         </div>
       </div>

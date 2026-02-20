@@ -115,7 +115,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
       >
         <img 
           src={assetUrl('images/hero_couple.jpg')} 
-          alt="Wedding photography"
+          alt="Fotografía de bodas"
           className="w-full h-full object-cover"
           style={{ objectPosition: '70% 30%' }}
         />
@@ -141,7 +141,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
           style={{ opacity: 0 }}
         >
           <p className="font-mono text-xs md:text-sm uppercase tracking-[0.14em] text-text-secondary">
-            Wedding & editorial photography
+            Fotografía de bodas y editorial
           </p>
         </div>
 
@@ -150,9 +150,9 @@ export default function Hero({ shutterComplete }: HeroProps) {
           <a 
             href="#contact"
             className="btn-gold inline-flex items-center gap-2 group"
-            data-cursor-text="Book"
+            data-cursor-text="Reservar"
           >
-            Book a Session
+            Reservar sesión
             <ChevronDown className="w-4 h-4 rotate-[-90deg] group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
@@ -165,7 +165,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
         style={{ opacity: 0 }}
       >
         <p className="font-mono text-xs text-text-secondary tracking-[0.08em] max-w-[280px]">
-          Based in the Pacific Northwest — available worldwide.
+          Con sede en México — disponibles en todo el país y el mundo.
         </p>
       </div>
 
@@ -176,7 +176,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
         style={{ opacity: 0 }}
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="font-mono text-xs text-text-secondary uppercase tracking-[0.12em]">Scroll</span>
+          <span className="font-mono text-xs text-text-secondary uppercase tracking-[0.12em]">Deslizar</span>
           <div ref={bounceIconRef}>
             <ChevronDown className="w-4 h-4 text-gold" />
           </div>

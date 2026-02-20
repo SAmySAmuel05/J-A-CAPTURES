@@ -9,6 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Calendar as CalendarComponent } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { format } from 'date-fns';
+import { es } from 'date-fns/locale';
 import { cn, assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -102,12 +103,12 @@ export default function Contact() {
             className="lg:w-[38%]"
             style={{ opacity: 0 }}
           >
-            <span className="micro-label">Contact</span>
+            <span className="micro-label">Contacto</span>
             <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-text-primary mt-4 leading-tight">
-              Let's make something timeless.
+              Hagamos algo que dure para siempre.
             </h2>
             <p className="mt-6 text-text-secondary text-lg leading-relaxed">
-              Tell us your date and what you're planning. We'll reply within one business day.
+              Cuéntanos tu fecha y qué tienes en mente. Te respondemos en un día hábil.
             </p>
             
             <div className="mt-8 flex items-center gap-3">
@@ -134,10 +135,10 @@ export default function Contact() {
                     <Send className="w-8 h-8 text-gold" />
                   </div>
                   <h3 className="font-display text-3xl text-text-primary mb-3">
-                    Message Sent!
+                    ¡Mensaje enviado!
                   </h3>
                   <p className="text-text-secondary">
-                    Thank you for reaching out. We'll be in touch within 24 hours.
+                    Gracias por escribirnos. Te responderemos en menos de 24 horas.
                   </p>
                 </div>
               ) : (
@@ -145,13 +146,13 @@ export default function Contact() {
                   {/* Name */}
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-text-secondary font-mono text-xs uppercase tracking-[0.12em]">
-                      Name
+                      Nombre
                     </Label>
                     <Input
                       id="name"
                       type="text"
                       required
-                      placeholder="Your name"
+                      placeholder="Tu nombre"
                       className="bg-charcoal/50 border-white/10 text-text-primary placeholder:text-text-secondary/50 focus:border-gold/50 focus:ring-gold/20"
                     />
                   </div>
@@ -159,13 +160,13 @@ export default function Contact() {
                   {/* Email */}
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-text-secondary font-mono text-xs uppercase tracking-[0.12em]">
-                      Email
+                      Correo
                     </Label>
                     <Input
                       id="email"
                       type="email"
                       required
-                      placeholder="your@email.com"
+                      placeholder="tu@correo.com"
                       className="bg-charcoal/50 border-white/10 text-text-primary placeholder:text-text-secondary/50 focus:border-gold/50 focus:ring-gold/20"
                     />
                   </div>
@@ -173,7 +174,7 @@ export default function Contact() {
                   {/* Event Date */}
                   <div className="space-y-2">
                     <Label className="text-text-secondary font-mono text-xs uppercase tracking-[0.12em]">
-                      Event Date
+                      Fecha del evento
                     </Label>
                     <Popover>
                       <PopoverTrigger asChild>
@@ -185,7 +186,7 @@ export default function Contact() {
                           )}
                         >
                           <Calendar className="mr-2 h-4 w-4 text-gold" />
-                          {date ? format(date, "PPP") : "Select a date"}
+                          {date ? format(date, "PPP", { locale: es }) : "Elegir fecha"}
                         </Button>
                       </PopoverTrigger>
                       <PopoverContent className="w-auto p-0 bg-slate border-white/10" align="start">
@@ -193,6 +194,7 @@ export default function Contact() {
                           mode="single"
                           selected={date}
                           onSelect={setDate}
+                          locale={es}
                           initialFocus
                           className="bg-slate text-text-primary"
                         />
@@ -203,13 +205,13 @@ export default function Contact() {
                   {/* Message */}
                   <div className="space-y-2">
                     <Label htmlFor="message" className="text-text-secondary font-mono text-xs uppercase tracking-[0.12em]">
-                      Message
+                      Mensaje
                     </Label>
                     <Textarea
                       id="message"
                       required
                       rows={4}
-                      placeholder="Tell us about your event..."
+                      placeholder="Cuéntanos sobre tu evento..."
                       className="bg-charcoal/50 border-white/10 text-text-primary placeholder:text-text-secondary/50 focus:border-gold/50 focus:ring-gold/20 resize-none"
                     />
                   </div>
@@ -223,11 +225,11 @@ export default function Contact() {
                     {isSubmitting ? (
                       <>
                         <div className="w-4 h-4 border-2 border-charcoal/30 border-t-charcoal rounded-full animate-spin" />
-                        Sending...
+                        Enviando...
                       </>
                     ) : (
                       <>
-                        Send inquiry
+                        Enviar consulta
                         <Send className="w-4 h-4" />
                       </>
                     )}

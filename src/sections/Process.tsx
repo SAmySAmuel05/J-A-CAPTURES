@@ -9,27 +9,27 @@ gsap.registerPlugin(ScrollTrigger);
 const processSteps = [
   {
     number: '01',
-    title: 'Book',
-    description: 'Choose your date and coverage. We\'ll confirm within 24 hours.',
+    title: 'Reservar',
+    description: 'Elige tu fecha y tipo de cobertura. Te confirmamos en menos de 24 horas.',
     image: assetUrl('images/process_book.jpg'),
     icon: Calendar,
-    details: ['Select your package', 'Pick your date', 'Sign the contract', 'Pay the retainer'],
+    details: ['Elige tu paquete', 'Selecciona tu fecha', 'Firma del contrato', 'Anticipo'],
   },
   {
     number: '02',
-    title: 'Plan',
-    description: 'Timeline, locations, and shot list—tailored to your day.',
+    title: 'Planear',
+    description: 'Cronograma, locaciones y lista de tomas, a la medida de tu día.',
     image: assetUrl('images/process_plan.jpg'),
     icon: MapPin,
-    details: ['Pre-wedding consultation', 'Location scouting', 'Timeline creation', 'Shot list review'],
+    details: ['Consulta previa', 'Búsqueda de locaciones', 'Armado del cronograma', 'Revisión de tomas'],
   },
   {
     number: '03',
-    title: 'Receive',
-    description: 'A curated gallery, print-ready files, and a keepsake edit.',
+    title: 'Recibir',
+    description: 'Galería curada, archivos para impresión y edición de recuerdo.',
     image: assetUrl('images/process_receive.jpg'),
     icon: Image,
-    details: ['Sneak peeks in 48hrs', 'Full gallery in 6-8 weeks', 'Print-ready files', 'Online gallery'],
+    details: ['Avances en 48 h', 'Galería completa en 6-8 semanas', 'Archivos para impresión', 'Galería en línea'],
   },
 ];
 
@@ -93,9 +93,9 @@ export default function Process() {
       <div className="section-padding">
         {/* Header */}
         <div className="section-header text-center mb-16">
-          <span className="micro-label">How It Works</span>
+          <span className="micro-label">Cómo trabajamos</span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-text-primary mt-4">
-            Our Process
+            Nuestro proceso
           </h2>
         </div>
 
@@ -188,7 +188,7 @@ export default function Process() {
                         isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                       }`}
                     >
-                      Get started
+                      Comenzar
                       <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>

@@ -8,34 +8,34 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     icon: Camera,
-    title: 'Wedding Coverage',
-    description: 'Full-day documentation, two photographers, online gallery.',
-    features: ['8+ hours coverage', '2 photographers', 'Online gallery', 'Print-ready files'],
-    price: 'From $4,500',
+    title: 'Cobertura de boda',
+    description: 'Documentación de día completo, dos fotógrafos, galería en línea.',
+    features: ['8+ horas de cobertura', '2 fotógrafos', 'Galería en línea', 'Archivos para impresión'],
+    price: 'Desde $75,000 MXN',
     popular: true,
   },
   {
     icon: Heart,
-    title: 'Engagement Session',
-    description: 'Scouted locations, styling notes, 60–90 minutes.',
-    features: ['Location scouting', 'Styling guidance', '60-90 minutes', '20+ edited photos'],
-    price: 'From $800',
+    title: 'Sesión de pareja',
+    description: 'Locaciones seleccionadas, asesoría de estilo, 60–90 minutos.',
+    features: ['Búsqueda de locaciones', 'Asesoría de vestuario', '60-90 minutos', '20+ fotos editadas'],
+    price: 'Desde $13,500 MXN',
     popular: false,
   },
   {
     icon: Building2,
-    title: 'Editorial & Events',
-    description: 'Corporate dinners, launches, and brand storytelling.',
-    features: ['Corporate events', 'Brand photography', 'Product launches', 'Team portraits'],
-    price: 'Custom quote',
+    title: 'Editorial y eventos',
+    description: 'Cenas corporativas, lanzamientos y fotografía de marca.',
+    features: ['Eventos corporativos', 'Fotografía de marca', 'Lanzamientos', 'Retratos de equipo'],
+    price: 'Cotización personalizada',
     popular: false,
   },
   {
     icon: Plus,
-    title: 'Add-Ons',
-    description: 'Film scans, albums, drone, and expedited delivery.',
-    features: ['Film photography', 'Custom albums', 'Drone footage', 'Rush delivery'],
-    price: 'From $300',
+    title: 'Extras',
+    description: 'Revelado en película, álbumes, dron y entrega express.',
+    features: ['Fotografía en película', 'Álbumes personalizados', 'Video con dron', 'Entrega urgente'],
+    price: 'Desde $5,000 MXN',
     popular: false,
   },
 ];
@@ -101,12 +101,12 @@ export default function Services() {
       <div className="section-padding">
         {/* Header */}
         <div className="section-header text-center mb-16 max-w-2xl mx-auto">
-          <span className="micro-label">Services</span>
+          <span className="micro-label">Servicios</span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-text-primary mt-4">
-            What We Offer
+            Lo que ofrecemos
           </h2>
           <p className="mt-6 text-text-secondary text-lg leading-relaxed">
-            From intimate ceremonies to full-weekend celebrations—coverage that fits your story.
+            Desde ceremonias íntimas hasta celebraciones de todo el fin de semana: cobertura a la medida de tu historia.
           </p>
         </div>
 
@@ -128,7 +128,7 @@ export default function Services() {
                 style={{ opacity: 0 }}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
-                data-cursor-text="Details"
+                data-cursor-text="Detalles"
               >
                 {/* Popular Badge */}
                 {service.popular && (
@@ -193,7 +193,7 @@ export default function Services() {
                       isHovered ? 'gap-3' : ''
                     }`}
                   >
-                    Learn more
+                    Saber más
                     <ArrowRight className={`w-4 h-4 transition-transform duration-300 ${
                       isHovered ? 'translate-x-1' : ''
                     }`} />
@@ -210,7 +210,7 @@ export default function Services() {
             href="#contact"
             className="btn-gold inline-flex items-center gap-2 group"
           >
-            Request custom quote
+            Solicitar cotización
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>

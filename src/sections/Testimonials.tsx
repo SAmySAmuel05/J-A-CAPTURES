@@ -8,23 +8,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
-    quote: "They didn't just capture our wedding—they captured the feeling of it.",
-    author: 'Maya & Jon',
-    role: 'Wedding Clients',
+    quote: "No solo capturaron nuestra boda: capturaron la emoción del día.",
+    author: 'Maya y Jon',
+    role: 'Clientes de boda',
     image: assetUrl('images/testimonial_left.jpg'),
     rating: 5,
   },
   {
-    quote: "The attention to detail was incredible. Every photo tells a story.",
-    author: 'Sarah & Michael',
-    role: 'Engagement Session',
+    quote: "El cuidado del detalle fue increíble. Cada foto cuenta una historia.",
+    author: 'Sarah y Michael',
+    role: 'Sesión de pareja',
     image: assetUrl('images/testimonial_right.jpg'),
     rating: 5,
   },
   {
-    quote: "Professional, creative, and so easy to work with. Highly recommend!",
+    quote: "Profesionales, creativos y muy fáciles de trabajar. ¡Los recomiendo mucho!",
     author: 'Emily Chen',
-    role: 'Corporate Event',
+    role: 'Evento corporativo',
     image: assetUrl('images/portfolio_social_01.jpg'),
     rating: 5,
   },
@@ -121,9 +121,9 @@ export default function Testimonials() {
       <div className="section-padding">
         {/* Header */}
         <div className="section-header text-center mb-16">
-          <span className="micro-label">Testimonials</span>
+          <span className="micro-label">Testimonios</span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-text-primary mt-4">
-            Client Love
+            Lo que dicen nuestros clientes
           </h2>
         </div>
 
@@ -182,7 +182,7 @@ export default function Testimonials() {
               onClick={prev}
               disabled={isAnimating}
               className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold/10 transition-all duration-300 disabled:opacity-50"
-              data-cursor-text="Prev"
+              data-cursor-text="Ant"
             >
               <ChevronLeft className="w-5 h-5 text-text-primary" />
             </button>
@@ -206,7 +206,7 @@ export default function Testimonials() {
               onClick={next}
               disabled={isAnimating}
               className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:border-gold hover:bg-gold/10 transition-all duration-300 disabled:opacity-50"
-              data-cursor-text="Next"
+              data-cursor-text="Sig"
             >
               <ChevronRight className="w-5 h-5 text-text-primary" />
             </button>

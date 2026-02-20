@@ -105,7 +105,7 @@ export default function StudioIntro() {
         className="text-center mb-12"
         style={{ opacity: 0 }}
       >
-        <span className="micro-label">The Studio</span>
+        <span className="micro-label">El estudio</span>
       </div>
 
       <div className="section-padding">
@@ -115,11 +115,11 @@ export default function StudioIntro() {
             ref={leftImageRef}
             className="w-full lg:w-[28vw] h-[50vh] lg:h-[64vh] overflow-hidden rounded-lg image-hover-zoom"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <img 
               src={assetUrl('images/studio_window_01.jpg')} 
-              alt="Getting ready moment"
+              alt="Momento de preparación"
               className="w-full h-full object-cover transition-transform duration-700"
             />
           </div>
@@ -131,16 +131,16 @@ export default function StudioIntro() {
             style={{ opacity: 0 }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight">
-              We photograph the in-between.
+              Fotografiamos los momentos entre momentos.
             </h2>
             <p className="mt-6 text-text-secondary text-base md:text-lg leading-relaxed">
-              Candid frames, honest light, and the kind of details you'll want to hold onto—crafted into a story you can feel.
+              Instantes candidos, luz natural y los detalles que querrás conservar, en una historia que se siente.
             </p>
             <a 
               href="#selected-work"
               className="inline-flex items-center gap-2 mt-8 text-gold font-mono text-sm uppercase tracking-[0.12em] hover:gap-4 transition-all duration-300 group"
             >
-              See selected work
+              Ver trabajo seleccionado
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -150,11 +150,11 @@ export default function StudioIntro() {
             ref={rightImageRef}
             className="w-full lg:w-[28vw] h-[50vh] lg:h-[64vh] overflow-hidden rounded-lg image-hover-zoom"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <img 
               src={assetUrl('images/studio_window_02.jpg')} 
-              alt="Couple in landscape"
+              alt="Pareja en exterior"
               className="w-full h-full object-cover transition-transform duration-700"
             />
           </div>

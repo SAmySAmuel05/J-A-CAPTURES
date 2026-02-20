@@ -83,11 +83,11 @@ export default function SelectedWork() {
   }, []);
 
   const tiles = [
-    { ref: 0, src: assetUrl('images/mosaic_tile_a.jpg'), label: 'Weddings', aspect: 'aspect-[21/9]' },
-    { ref: 1, src: assetUrl('images/mosaic_tile_b.jpg'), label: 'Engagement', aspect: 'aspect-[4/5]' },
+    { ref: 0, src: assetUrl('images/mosaic_tile_a.jpg'), label: 'Bodas', aspect: 'aspect-[21/9]' },
+    { ref: 1, src: assetUrl('images/mosaic_tile_b.jpg'), label: 'Parejas', aspect: 'aspect-[4/5]' },
     { ref: 2, src: assetUrl('images/mosaic_tile_c.jpg'), label: 'Editorial', aspect: 'aspect-[4/5]' },
-    { ref: 3, src: assetUrl('images/mosaic_tile_d.jpg'), label: 'Events', aspect: 'aspect-[16/9]' },
-    { ref: 4, src: assetUrl('images/mosaic_tile_e.jpg'), label: 'Details', aspect: 'aspect-[21/9]' },
+    { ref: 3, src: assetUrl('images/mosaic_tile_d.jpg'), label: 'Eventos', aspect: 'aspect-[16/9]' },
+    { ref: 4, src: assetUrl('images/mosaic_tile_e.jpg'), label: 'Detalles', aspect: 'aspect-[21/9]' },
   ];
 
   return (
@@ -104,7 +104,7 @@ export default function SelectedWork() {
             ref={(el) => { tilesRef.current[0] = el; }}
             className="col-span-12 md:col-span-7 relative overflow-hidden rounded-xl group cursor-pointer"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <div className="aspect-[21/9] md:aspect-[16/7]">
               <img 
@@ -126,7 +126,7 @@ export default function SelectedWork() {
             ref={(el) => { tilesRef.current[1] = el; }}
             className="col-span-6 md:col-span-5 relative overflow-hidden rounded-xl group cursor-pointer"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <div className="aspect-[4/5]">
               <img 
@@ -148,7 +148,7 @@ export default function SelectedWork() {
             ref={(el) => { tilesRef.current[2] = el; }}
             className="col-span-6 md:col-span-4 relative overflow-hidden rounded-xl group cursor-pointer"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <div className="aspect-[4/5]">
               <img 
@@ -172,18 +172,18 @@ export default function SelectedWork() {
             style={{ opacity: 0 }}
           >
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-text-primary text-center">
-              Selected
+              Trabajo
               <br />
-              <span className="text-gold">Work</span>
+              <span className="text-gold">seleccionado</span>
             </h2>
             <p className="mt-4 font-mono text-xs text-text-secondary uppercase tracking-[0.14em] text-center">
-              Weddings • Events • Portraits
+              Bodas • Eventos • Retratos
             </p>
             <a 
               href="#portfolio"
               className="mt-6 inline-flex items-center gap-2 text-gold font-mono text-sm uppercase tracking-[0.12em] hover:gap-4 transition-all duration-300 group"
             >
-              View all
+              Ver todo
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -193,7 +193,7 @@ export default function SelectedWork() {
             ref={(el) => { tilesRef.current[3] = el; }}
             className="col-span-12 md:col-span-4 relative overflow-hidden rounded-xl group cursor-pointer"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <div className="aspect-[16/9] md:aspect-[4/5]">
               <img 
@@ -215,7 +215,7 @@ export default function SelectedWork() {
             ref={(el) => { tilesRef.current[4] = el; }}
             className="col-span-12 relative overflow-hidden rounded-xl group cursor-pointer"
             style={{ opacity: 0 }}
-            data-cursor-text="View"
+            data-cursor-text="Ver"
           >
             <div className="aspect-[21/9] md:aspect-[21/7]">
               <img 
