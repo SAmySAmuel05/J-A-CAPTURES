@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,11 +83,11 @@ export default function SelectedWork() {
   }, []);
 
   const tiles = [
-    { ref: 0, src: '/images/mosaic_tile_a.jpg', label: 'Weddings', aspect: 'aspect-[21/9]' },
-    { ref: 1, src: '/images/mosaic_tile_b.jpg', label: 'Engagement', aspect: 'aspect-[4/5]' },
-    { ref: 2, src: '/images/mosaic_tile_c.jpg', label: 'Editorial', aspect: 'aspect-[4/5]' },
-    { ref: 3, src: '/images/mosaic_tile_d.jpg', label: 'Events', aspect: 'aspect-[16/9]' },
-    { ref: 4, src: '/images/mosaic_tile_e.jpg', label: 'Details', aspect: 'aspect-[21/9]' },
+    { ref: 0, src: assetUrl('images/mosaic_tile_a.jpg'), label: 'Weddings', aspect: 'aspect-[21/9]' },
+    { ref: 1, src: assetUrl('images/mosaic_tile_b.jpg'), label: 'Engagement', aspect: 'aspect-[4/5]' },
+    { ref: 2, src: assetUrl('images/mosaic_tile_c.jpg'), label: 'Editorial', aspect: 'aspect-[4/5]' },
+    { ref: 3, src: assetUrl('images/mosaic_tile_d.jpg'), label: 'Events', aspect: 'aspect-[16/9]' },
+    { ref: 4, src: assetUrl('images/mosaic_tile_e.jpg'), label: 'Details', aspect: 'aspect-[21/9]' },
   ];
 
   return (

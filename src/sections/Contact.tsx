@@ -9,7 +9,7 @@ import { Label } from '@/components/ui/label';
 import { Calendar as CalendarComponent } from '@/components/ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { format } from 'date-fns';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,7 +86,7 @@ export default function Contact() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="/images/closing_bg.jpg" 
+          src={assetUrl('images/closing_bg.jpg')} 
           alt="Background"
           className="w-full h-full object-cover"
         />

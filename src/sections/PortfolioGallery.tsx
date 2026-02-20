@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { X, ZoomIn } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,21 +16,21 @@ interface PortfolioItem {
 }
 
 const portfolioItems: PortfolioItem[] = [
-  { id: 1, src: '/images/hero_couple.jpg', title: 'Eternal Love', category: 'weddings' },
-  { id: 2, src: '/images/mosaic_tile_a.jpg', title: 'Bridal Portrait', category: 'weddings' },
-  { id: 3, src: '/images/mosaic_tile_b.jpg', title: 'Urban Romance', category: 'weddings' },
-  { id: 4, src: '/images/mosaic_tile_c.jpg', title: 'Classic Elegance', category: 'weddings' },
-  { id: 5, src: '/images/mosaic_tile_d.jpg', title: 'Reception Magic', category: 'weddings' },
-  { id: 6, src: '/images/mosaic_tile_e.jpg', title: 'The Details', category: 'weddings' },
-  { id: 7, src: '/images/portfolio_corporate_01.jpg', title: 'Gala Evening', category: 'corporate' },
-  { id: 8, src: '/images/portfolio_corporate_02.jpg', title: 'Executive Portrait', category: 'corporate' },
-  { id: 9, src: '/images/portfolio_corporate_03.jpg', title: 'Conference Keynote', category: 'corporate' },
-  { id: 10, src: '/images/portfolio_social_01.jpg', title: 'Celebration', category: 'social' },
-  { id: 11, src: '/images/portfolio_social_02.jpg', title: 'Birthday Toast', category: 'social' },
-  { id: 12, src: '/images/portfolio_portrait_01.jpg', title: 'Studio Elegance', category: 'portraits' },
-  { id: 13, src: '/images/portfolio_portrait_02.jpg', title: 'Character Study', category: 'portraits' },
-  { id: 14, src: '/images/studio_window_02.jpg', title: 'Golden Hour', category: 'weddings' },
-  { id: 15, src: '/images/testimonial_left.jpg', title: 'Joyful Moments', category: 'weddings' },
+  { id: 1, src: assetUrl('images/hero_couple.jpg'), title: 'Eternal Love', category: 'weddings' },
+  { id: 2, src: assetUrl('images/mosaic_tile_a.jpg'), title: 'Bridal Portrait', category: 'weddings' },
+  { id: 3, src: assetUrl('images/mosaic_tile_b.jpg'), title: 'Urban Romance', category: 'weddings' },
+  { id: 4, src: assetUrl('images/mosaic_tile_c.jpg'), title: 'Classic Elegance', category: 'weddings' },
+  { id: 5, src: assetUrl('images/mosaic_tile_d.jpg'), title: 'Reception Magic', category: 'weddings' },
+  { id: 6, src: assetUrl('images/mosaic_tile_e.jpg'), title: 'The Details', category: 'weddings' },
+  { id: 7, src: assetUrl('images/portfolio_corporate_01.jpg'), title: 'Gala Evening', category: 'corporate' },
+  { id: 8, src: assetUrl('images/portfolio_corporate_02.jpg'), title: 'Executive Portrait', category: 'corporate' },
+  { id: 9, src: assetUrl('images/portfolio_corporate_03.jpg'), title: 'Conference Keynote', category: 'corporate' },
+  { id: 10, src: assetUrl('images/portfolio_social_01.jpg'), title: 'Celebration', category: 'social' },
+  { id: 11, src: assetUrl('images/portfolio_social_02.jpg'), title: 'Birthday Toast', category: 'social' },
+  { id: 12, src: assetUrl('images/portfolio_portrait_01.jpg'), title: 'Studio Elegance', category: 'portraits' },
+  { id: 13, src: assetUrl('images/portfolio_portrait_02.jpg'), title: 'Character Study', category: 'portraits' },
+  { id: 14, src: assetUrl('images/studio_window_02.jpg'), title: 'Golden Hour', category: 'weddings' },
+  { id: 15, src: assetUrl('images/testimonial_left.jpg'), title: 'Joyful Moments', category: 'weddings' },
 ];
 
 const categories: { key: Category; label: string }[] = [

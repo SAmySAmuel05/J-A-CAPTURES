@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, Check, Calendar, MapPin, Image } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,7 +11,7 @@ const processSteps = [
     number: '01',
     title: 'Book',
     description: 'Choose your date and coverage. We\'ll confirm within 24 hours.',
-    image: '/images/process_book.jpg',
+    image: assetUrl('images/process_book.jpg'),
     icon: Calendar,
     details: ['Select your package', 'Pick your date', 'Sign the contract', 'Pay the retainer'],
   },
@@ -18,7 +19,7 @@ const processSteps = [
     number: '02',
     title: 'Plan',
     description: 'Timeline, locations, and shot list—tailored to your day.',
-    image: '/images/process_plan.jpg',
+    image: assetUrl('images/process_plan.jpg'),
     icon: MapPin,
     details: ['Pre-wedding consultation', 'Location scouting', 'Timeline creation', 'Shot list review'],
   },
@@ -26,7 +27,7 @@ const processSteps = [
     number: '03',
     title: 'Receive',
     description: 'A curated gallery, print-ready files, and a keepsake edit.',
-    image: '/images/process_receive.jpg',
+    image: assetUrl('images/process_receive.jpg'),
     icon: Image,
     details: ['Sneak peeks in 48hrs', 'Full gallery in 6-8 weeks', 'Print-ready files', 'Online gallery'],
   },

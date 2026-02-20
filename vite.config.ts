@@ -4,8 +4,9 @@ import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
+// En GitHub Pages (proyecto) la app está en /J-A-CAPTURES/
 export default defineConfig({
-  base: './',
+  base: process.env.VITE_BASE_URL || './',
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {

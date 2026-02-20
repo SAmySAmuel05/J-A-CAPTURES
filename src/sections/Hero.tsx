@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ChevronDown } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,7 +114,7 @@ export default function Hero({ shutterComplete }: HeroProps) {
         style={{ opacity: 0 }}
       >
         <img 
-          src="/images/hero_couple.jpg" 
+          src={assetUrl('images/hero_couple.jpg')} 
           alt="Wedding photography"
           className="w-full h-full object-cover"
           style={{ objectPosition: '70% 30%' }}

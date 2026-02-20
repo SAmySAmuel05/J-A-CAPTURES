@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Quote, ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,21 +11,21 @@ const testimonials = [
     quote: "They didn't just capture our wedding—they captured the feeling of it.",
     author: 'Maya & Jon',
     role: 'Wedding Clients',
-    image: '/images/testimonial_left.jpg',
+    image: assetUrl('images/testimonial_left.jpg'),
     rating: 5,
   },
   {
     quote: "The attention to detail was incredible. Every photo tells a story.",
     author: 'Sarah & Michael',
     role: 'Engagement Session',
-    image: '/images/testimonial_right.jpg',
+    image: assetUrl('images/testimonial_right.jpg'),
     rating: 5,
   },
   {
     quote: "Professional, creative, and so easy to work with. Highly recommend!",
     author: 'Emily Chen',
     role: 'Corporate Event',
-    image: '/images/portfolio_social_01.jpg',
+    image: assetUrl('images/portfolio_social_01.jpg'),
     rating: 5,
   },
 ];

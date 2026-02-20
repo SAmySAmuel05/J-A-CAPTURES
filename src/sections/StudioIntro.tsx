@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight } from 'lucide-react';
+import { assetUrl } from '@/lib/utils';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -117,7 +118,7 @@ export default function StudioIntro() {
             data-cursor-text="View"
           >
             <img 
-              src="/images/studio_window_01.jpg" 
+              src={assetUrl('images/studio_window_01.jpg')} 
               alt="Getting ready moment"
               className="w-full h-full object-cover transition-transform duration-700"
             />
@@ -152,7 +153,7 @@ export default function StudioIntro() {
             data-cursor-text="View"
           >
             <img 
-              src="/images/studio_window_02.jpg" 
+              src={assetUrl('images/studio_window_02.jpg')} 
               alt="Couple in landscape"
               className="w-full h-full object-cover transition-transform duration-700"
             />
